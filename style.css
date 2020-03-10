@@ -1,0 +1,38 @@
+iframe{
+    width: 100vw;
+    height: 500px;
+}
+body{
+    font-family: Poppins;
+    margin: 0;
+    background-color: #1a0042;
+}
+img{
+    margin: 0 !important;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.parallax {
+    background-image: url("./images/females-question.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.fullDiv{
+    height: 100vh;
+    width: 100vw;
+}
+.headline{
+    height: 150px
+}
+
+.flexRow{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+}
