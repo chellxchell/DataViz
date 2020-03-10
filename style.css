@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 iframe{
     width: 100vw;
     height: 500px;
@@ -6,13 +9,16 @@ body{
     font-family: Poppins;
     margin: 0;
     background-color: #1a0042;
+    color: white;
 }
 img{
     margin: 0 !important;
 }
 h1{
     text-align: center;
-    color: white;
+}
+a{
+    font-size: 20px;
 }
 .parallax {
     background-image: url("./images/females-question.png");
@@ -33,6 +39,57 @@ h1{
 
 .flexRow{
     display: flex;
+}
+.flexCenter{
+    justify-content: center;
+    align-items: center;
+}
+
+.headlineRow{
     justify-content: space-around;
     padding: 25px 0;
+}
+
+.divTitle{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+
+.titleSlide{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titleSlide__title{
+    font-size: 75px;
+    padding: 0 20px;
+}
+.titleSlide__subtitle{
+    font-size: 35px;
+}
+
+section{
+    scroll-snap-type: y mandatory;
+}
+
+.navbar{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #1a0042;
+}
+.navbar__link{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.navbar__link:hover{
+    color: lightblue;
 }
