@@ -1,28 +1,103 @@
+/* ----------------ELEMENTS ---------------------*/
 html {
     scroll-behavior: smooth;
   }
-iframe{
-    width: 100vw;
-    height: 500px;
-}
 body{
     font-family: Poppins;
     margin: 0;
     background-color: #1a0042;
     color: white;
 }
+
+section{
+    scroll-snap-type: y mandatory;
+    padding-top: 50px;
+}
+
+iframe{
+    width: 100vw;
+    height: 500px;
+}
 img{
+    margin: 0 !important;
+    animation: fadeIn ease 10s;
+}
+
+h1,h2{
+    text-align: center;
     margin: 0 !important;
 }
 h1{
-    text-align: center;
+    font-size: 35px;
 }
 a{
     font-size: 20px;
 }
+
+/* ----------------UTILITY CLASSES ---------------------*/
+.fullDiv{
+    height: 100vh;
+    width: 100vw;
+}
+
+.flexRow{
+    display: flex;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.flexCenter{
+    justify-content: center;
+    align-items: center;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+/* ----------------NAVBAR ---------------------*/
+.navbar{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #1a0042;
+    z-index: 99;
+}
+.navbar__link{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.navbar__link:hover{
+    color: lightblue;
+}
+
+/* ----------------TITLE SLIDE ---------------------*/
+.titleSlide{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titleSlide__title{
+    font-size: 75px;
+    padding: 0 20px;
+}
+.titleSlide__subtitle{
+    font-size: 35px;
+    margin-top: 20px !important;
+}
+
+/* ----------------PARALLAX ---------------------*/
 .parallax--ow{
     height: 100vh;
-    background-image: url("./images/females-question.png");
+    background-image: url("./images/ow/females-question.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,72 +112,47 @@ a{
     background-size: cover;
 }
 
-.fullDiv{
-    height: 100vh;
-    width: 100vw;
-}
+/* ----------------IMAGES ---------------------*/
 .headline{
     height: 150px
 }
-
-.flexRow{
-    display: flex;
-}
-.flexCenter{
-    justify-content: center;
-    align-items: center;
-}
-
 .headlineRow{
     justify-content: space-around;
     padding: 25px 0;
 }
 
+.image--small{
+    height: 550px;
+}
+.image--medium{
+    width: 90%;
+    margin-bottom: 20px !important;
+}
+.image--full{
+    width: 82%;
+}
+.image--controller{
+    height: 200px;
+}
+
+/* ----------------DIVS ---------------------*/
 .divTitle{
     color: white;
     font-size: 100px;
     text-align: center;
 }
 
-.titleSlide{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.divSmall{
+    height: 300px;
 }
-.titleSlide__title{
-    font-size: 75px;
-    padding: 0 20px;
-}
-.titleSlide__subtitle{
-    font-size: 35px;
+.divTrailer{
+    margin-bottom: 75px;
 }
 
-section{
-    scroll-snap-type: y mandatory;
-    padding-top: 50px;
-}
 
-.navbar{
-    height: 50px;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    background-color: #1a0042;
-}
-.navbar__link{
-    color: white;
-    text-decoration: none;
-    padding: 0 15px;
-}
-.navbar__link:hover{
-    color: lightblue;
-}
-
-.image--small{
-    height: 550px;
+.chartTitle{
+    color: #1a0042;
+    background-color: lightblue;
+    text-align: center;
+    font-size: 25px;
 }

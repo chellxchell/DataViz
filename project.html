@@ -7,8 +7,9 @@
 </head>
 
 <body>
+    <!------------- NAVBAR --------------->
     <div class="navbar">
-        <a class="navbar__link" href="#titleSlide">Top</a>
+        <a class="navbar__link" href="#titleSlide">&#8593;</a>
         <a class="navbar__link" href="#bfv">Battlefield</a>
         <a class="navbar__link" href="#demographics">Demographics</a>
         <a class="navbar__link" href="#ow">Overwatch</a>
@@ -16,9 +17,11 @@
         <a class="navbar__link" href="#sources">Sources</a>
     </div>
 
+    <!------------- INTRO SLIDE --------------->
     <section class="titleSlide" id="titleSlide">
+        <img class="image--controller" src="images/controller.png">
         <h1 class="titleSlide__title">Gaming: The Good, <br>The Bad, and the Ugly</h1>
-        <h2 class="titleSlide__subtitle">Angel, Chelly, David, Pravika, Teddy</h2 class="titleSlide__title">
+        <h2 class="titleSlide__subtitle">Angel, Chelly, David, Jason, Pravika, Teddy</h2s>
     </section>
 
     <!------------- BATTLEFIELD --------------->
@@ -26,20 +29,23 @@
         <div class="fullDiv flexRow flexCenter">
             <img src="images/bfv/1.png">
         </div>
-        <div class="fullDiv flexRow flexCenter">
-            <img src="images/bfv/2.png">
+        <div class="fullDiv flexColumn flexCenter">
+            <h1>Battlefield 1 Active Player Count</h1>
+            <img class="image--full" src="images/bfv/2.png">
         </div>
-        <div class="fullDiv flexRow flexCenter">
-            <img src="images/bfv/3.png">
+        <h1>BF1 VS BF5 Interest Over Time</h1>
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2152_RC02/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"battlefield 5","geo":"US","time":"today 5-y"},{"keyword":"battlefield 1","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=battlefield%205,battlefield%201","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+        <div class="divTrailer flexRow flexCenter">
+            <img class="fullWidth" src="images/bfv/3.png">
         </div>
         <div class="fullDiv flexRow flexCenter">
             <img src="images/bfv/4.png">
         </div>
         <div class="fullDiv flexRow flexCenter">
-            <img src="images/bfv/5.png">
+            <img class="image--full" src="images/bfv/5.png">
         </div>
         <div class="fullDiv flexRow flexCenter">
-            <img src="images/bfv/6.png">
+            <img class="image--full" src="images/bfv/6.png">
         </div>
         <div class="fullDiv flexRow flexCenter">
             <img src="images/bfv/7.png">
@@ -55,43 +61,52 @@
             <h1>Character Demographics</h1>
             <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
+        <div class="flourish-embed flourish-survey" data-src="visualisation/1549476">
+            <h1>Developer Demographics</h1>
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
         <div class="flourish-embed flourish-survey" data-src="visualisation/1509785">
             <h1>Player Demographics</h1>
             <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
-        <div class="flourish-embed flourish-survey" data-src="visualisation/1549476">
-            <h1>Developer Demographics</h1>
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <div class="fullDiv flexRow flexCenter">
+            <img class="fullWidth" src="images/stats.png">
         </div>
     </section>
 
     <!------------- OVERWATCH --------------->
     <section id="ow">
         <div class="parallax parallax--ow"></div>
-        <img src="images/geguri-slide.png">
-        <img src="images/ow-intro.png">
+        <div class="fullDiv flexRow flexCenter">
+            <img src="images/ow/geguri-slide.png">
+        </div>
+        <div class="fullDiv flexRow flexCenter">
+            <img src="images/ow/ow-intro.png">
+        </div>
         <div class="flourish-embed flourish-chart" data-src="visualisation/1549631">
             <h1>Overwatch / Blizzard Demographics</h1>
             <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
         <div>
-            <h1>Tracer Interest Over Time (Jan - Dec 2016)</h1>
+            <h1>Tracer Interest Over Time</h1>
             <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2152_RC02/embed_loader.js"></script>
             <script
                 type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", { "comparisonItem": [{ "keyword": "tracer", "geo": "US", "time": "2016-01-01 2016-12-31" }], "category": 0, "property": "" }, { "exploreQuery": "date=2016-01-01%202016-12-31&geo=US&q=tracer", "guestPath": "https://trends.google.com:443/trends/embed/" }); </script>
         </div>
         <div class="flexRow headlineRow">
-            <img class="headline" src="images/pose.png">
-            <img class="headline" src="images/queer.png">
+            <img class="headline" src="images/ow/pose.png">
+            <img class="headline" src="images/ow/queer.png">
         </div>
     </section>
 
     <!------------- LAST OF US --------------->
     <section id="lastofus">
         <div class="parallax parallax--lou"></div>
-        <img src="images/last-of-us/tweets.png">
         <div class="fullDiv flexRow flexCenter">
-            <img class="image--small" src="images/tweet.png">
+            <img src="images/last-of-us/tweets.png">
+        </div>
+        <div class="fullDiv flexRow flexCenter">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">For each one of these bigoted &amp; sad posts I get 1000s of positive ones from amazing fans. Both kinds inspire greater diversity in our games. <a href="https://t.co/lSLgPzecbs">pic.twitter.com/lSLgPzecbs</a></p>&mdash; Neil Druckmann (@Neil_Druckmann) <a href="https://twitter.com/Neil_Druckmann/status/884273399039541248?ref_src=twsrc%5Etfw">July 10, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </section>
 
@@ -107,6 +122,8 @@
         <a href="https://www.pewresearch.org/fact-tank/2017/09/11/younger-men-play-video-games-but-so-do-a-diverse-group-of-other-americans/">https://www.pewresearch.org/fact-tank/2017/09/11/younger-men-play-video-games-but-so-do-a-diverse-group-of-other-americans/</a>
         <a href="https://qz.com/1433085/the-era-of-white-male-games-for-white-male-gamers-is-ending/">https://qz.com/1433085/the-era-of-white-male-games-for-white-male-gamers-is-ending/</a>
         <a href="https://www.marketingcharts.com/digital-63827">https://www.marketingcharts.com/digital-63827</a>
+        <a href="https://www.pcgamesn.com/overwatch/overwatch-female-player-count">https://www.pcgamesn.com/overwatch/overwatch-female-player-count</a>
+        <a href="http://www.bbc.co.uk/newsbeat/article/40899939/blizzard-starts-drive-to-recruit-more-women-and-ethnic-minorities">http://www.bbc.co.uk/newsbeat/article/40899939/blizzard-starts-drive-to-recruit-more-women-and-ethnic-minorities</a>
     </section>
     
 </body>
