@@ -20,18 +20,21 @@ h1{
 a{
     font-size: 20px;
 }
-.parallax {
+.parallax--ow{
     height: 100vh;
+    background-image: url("./images/females-question.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-.parallax--ow{
-    background-image: url("./images/females-question.png");
 }
 .parallax--lou{
+    height: 100vh;
     background-image: url('./images/last-of-us/cover.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fullDiv{
