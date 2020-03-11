@@ -21,13 +21,18 @@ a{
     font-size: 20px;
 }
 .parallax {
-    background-image: url("./images/females-question.png");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+.parallax--ow{
+    background-image: url("./images/females-question.png");
+}
+.parallax--lou{
+    background-image: url('./images/last-of-us/cover.jpg');
+}
 
 .fullDiv{
     height: 100vh;
@@ -73,10 +78,11 @@ a{
 
 section{
     scroll-snap-type: y mandatory;
+    padding-top: 50px;
 }
 
 .navbar{
-    height: 60px;
+    height: 50px;
     position: fixed;
     top: 0;
     display: flex;
@@ -92,4 +98,8 @@ section{
 }
 .navbar__link:hover{
     color: lightblue;
+}
+
+.image--small{
+    height: 550px;
 }
